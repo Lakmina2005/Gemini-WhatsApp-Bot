@@ -1,0 +1,24 @@
+{
+  "name": "HubGemini-AI-Bot",
+  "description": "ලක්මිණගේ Gemini AI බලගැන්වූ සුපිරි Personal WhatsApp Chatbot",
+  "keywords": ["whatsapp", "bot", "gemini", "ai", "heroku"],
+  "env": {
+    "BOT_NAME": {
+      "description": "බොට්ගේ නම",
+      "value": "HubGemini AI",
+      "required": true
+    },
+    "GEMINI_KEY": {
+      "description": "ඔයාගේ Google AI Studio Gemini API Key එක මෙතනට දාන්න (AIzaSy...)",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    }
+  ]
+}
